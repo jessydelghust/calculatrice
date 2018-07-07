@@ -1,0 +1,52 @@
+/*
+COLORS
+
+Primary: #2B9EF6
+
+Grey light 1: #F2F2F2
+Grey light 2: #FCFCFC
+
+Grey dark 1: #AEAEAE
+
+*/
+
+:root {
+    --color-primary: #2B9EF6;
+
+    --color-grey-light-1: #F2F2F2;
+    --color-grey-light-2: #FCFCFC;
+
+    --color-grey-dark-1: #AEAEAE;
+
+    --shadow: 0 0.5rem 4rem rgba(0,0,0,.3);
+}
+
+$breakpoint: 31.25em; // Pour responsive, 1em = 16px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--color-grey-dark-1);
+    background-color: var(--color-primary);
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
